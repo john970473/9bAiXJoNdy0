@@ -10,8 +10,8 @@ var player;
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    // height: '390',
-    // width: '640',
+    //height: '100%',
+    width: '100%',
     videoId: '9bAiXJoNdy0',
     events: {
       // 'onReady': onPlayerReady,
@@ -29,21 +29,30 @@ function onPlayerReady(event) {
 // 5. The API calls this function when the player's state changes.
 //    The function indicates that when playing a video (state=1),
 //    the player should play for six seconds and then stop.
-var done = false;
-
-function onPlayerStateChange(event) {
-
-  if (event.data == YT.PlayerState.PLAYING && !done) {
-    setTimeout(stopVideo, 6000);
-    done = true;
-  }
-}
+// var done = false;
+//
+// function onPlayerStateChange(event) {
+//
+//   if (event.data == YT.PlayerState.PLAYING) {
+//     while (true) {
+//         if(player.getCurrentTime() > transcript.data[1].t/1000){
+//           document.getElementById('ts'+ 2).style.backgroundColor = "lightgray";
+//         }
+//         if(player.getCurrentTime() > transcript.data[3].t/1000){
+//           document.getElementById('ts'+ 4).style.backgroundColor = "lightgray";
+//         }
+//     }
+//
+//
+//   }
+// }
 
 function stopVideo() {
   player.stopVideo();
 }
 
 function play_context_one(index){
+
     player.loadVideoById("9bAiXJoNdy0", transcript.data[index-1].t/1000,"large");
     setTimeout(pauseVideo, transcript.data[index-1].d);
     for (var i=1 ; i<=10 ; i++){
@@ -53,4 +62,7 @@ function play_context_one(index){
 }
 function pauseVideo() {
   player.pauseVideo();
+  for (var i=1 ; i<=10 ; i++){
+    document.getElementById('ts'+ i).style.backgroundColor = "white";
+  }
 }

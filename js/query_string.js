@@ -12,7 +12,7 @@ var transcript = {
     },
     {
       "t": "6220",
-      "d": "2020",
+      "d": "3020",
       "ts": "Well yes, obviously, thank you. <br>"
     },
     {
@@ -26,28 +26,28 @@ var transcript = {
       "ts": "I'm talking about when a friend discusses their problems with you.   <br> "
     },
     {
-      "t": "18220",
-      "d": "1280",
+      "t": "17220",
+      "d": "3280",
       "ts": "Do you immediately say, Oh, you know what you should do? <br> "
     },
     {
       "t": "19840",
-      "d": "5680",
+      "d": "4680",
       "ts": "	I've noticed recently that I have a pattern.  <br> "
     },
     {
-      "t": "25520",
-      "d": "1440",
+      "t": "23520",
+      "d": "4440",
       "ts": "I offer unsolicited advice all the time when my friends have problems.  <br> "
     },
     {
       "t": "26960",
-      "d": "1640",
+      "d": "3640",
       "ts": "	And I know the intentions are good,  <br> "
     },
     {
       "t": "28600",
-      "d": "2540",
+      "d": "3540",
       "ts": "	because when we see someone we care about suffering,  <br> "
     }
   ]
